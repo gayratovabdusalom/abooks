@@ -174,16 +174,29 @@
     cursor: pointer;
 }
 
-.item__text{
+.item__btn2{
     font-family: 'Cardo';
     font-weight: 400;
     font-size: 19px;
     line-height: 30px; 
-    letter-spacing: 0.38px;
+    /* letter-spacing: 0.38px; */
     text-transform: capitalize;  
-    color: #FFFFFF;
-    padding-bottom: 3px;
-    border-bottom: 1px solid #FFFFFF;  
+    text-decoration: none;
+    transition: 0.3s;
+    background: transparent;
+    padding: 18px 52px;
+    margin: 42px 0 47px 0;
+    border: none;
+    cursor: pointer;
+    color: #1B3764;
+    background: #FFCA42;
+    border: 2px solid #FFCA42;
+}
+
+.item__btn2:hover{
+    /* border-bottom: 1px solid #FFFFFF; */
+    background: white;
+    border: 2px solid white ;
 }
 
 .item2{
@@ -956,6 +969,7 @@
     flex-direction: column;
     width: 420px;
     padding-bottom: 28px;
+    height: 632px;
 }
 
 .items-artic__img{
@@ -963,9 +977,9 @@
     height: 350px;
 }
 
-.artic-box__link:hover{
-    border-bottom: 2px solid #1B3764;
-    
+.artic-box__link:hover, .items-artic__img2{
+    /* border-bottom: 2px solid #1B3764; */
+    opacity: 1;
 }
 
 .artic-box__link{
@@ -978,6 +992,24 @@
     /* padding: 25px 0 19px 30px; */
     text-decoration: none;
     
+}
+
+.artic-box__btn{
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.24px;
+    color: #1B3764;
+    border: none;
+    background: white;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.artic-box__btn:hover{
+    /* border-bottom: 2px solid #1B3764; */
+   
 }
 
 .items-artic__title{
@@ -1017,20 +1049,27 @@
     line-height: 23px;
     letter-spacing: 0.38px;
     text-transform: capitalize;   
-    color: #1B3764;    
+    color: #1B3764;  
+    margin: 20px 0;  
 }
+
+/* .box7-items__artic{
+    margin: 20px 0;
+} */
 
 .artic-box__text{
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;     
-    color: #1B3764;    
+    color: #1B3764; 
+    margin: 20px 0;   
 }
 
 .items-artic__img2{
    width: 120px;
    padding-left: 30px;
+   opacity: 0;
 }
 
 .main__box8{
@@ -1116,8 +1155,16 @@
     background: #1B3764;
     border: 2px solid #1B3764;
     height: 68px;
-    width: 328px;        
+    width: 328px;   
+    transition: 0.3s;     
 }
+
+.email-items__btn:hover{
+    background: white;
+    color: #1B3764;
+    border: 2px solid white;
+}
+
 
 .footer{
     background: #1B3764;
@@ -1297,4 +1344,15 @@
     background: #FFCA42;
     border: 2px solid #FFCA42;
     transition: 0.4s;
+    color: #1B3764;
+    
+ }
+
+ .artic-box__link{
+    border-bottom: 2px solid #1B3764;
+ }
+
+ html{
+    scroll-behavior: smooth;
+    transition: 0.3s;
  }
